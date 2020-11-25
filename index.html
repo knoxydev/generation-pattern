@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generation Pattern</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="block-setting">
+		<div class="setting-page1">
+
+			<div class="figure-select-block-name">Фигуры</div>
+			<div class="figure-select-block">
+				<input type="radio" name="figure-select" id="square-btn" checked="checked">
+				<label for="square-btn"><i class="fas fa-square"></i></label>
+
+				<input type="radio" name="figure-select" id="circle-btn">
+				<label for="circle-btn"><i class="fas fa-circle"></i></label>
+
+				<input type="radio" name="figure-select" id="square-circle-btn">
+				<label for="square-circle-btn"><i class="fas fa-square"></i><i class="fas fa-circle"></i></label>
+			</div><br>
+
+			<div class="fill-stroke-slc-block-name">Вид фигур</div>
+			<div class="fill-stroke-slc-block">
+				<input type="radio" name="fill-stroke-slc" id="fill-btn" checked="checked">
+				<label for="fill-btn"><i class="fas fa-square"></i></label>
+
+				<input type="radio" name="fill-stroke-slc" id="stroke-btn">
+				<label for="stroke-btn"><i class="far fa-square"></i></label>
+
+				<input type="radio" name="fill-stroke-slc" id="fill-stroke-btn">
+				<label for="fill-stroke-btn"><i class="fas fa-square"></i><i class="far fa-square"></i></label>
+			</div><br>
+
+			<div class="tsrt-zone-block-name">Пустыне зоны в паттерне ?</div>
+			<div class="tsrt-zone-slc-block">
+				<input type="radio" name="tsrt-zone-slc" id="tsrt-true-btn" checked="checked">
+				<label for="tsrt-true-btn">Да</label>
+
+				<input type="radio" name="tsrt-zone-slc" id="tsrt-false-btn">
+				<label for="tsrt-false-btn">Нет</label>
+			</div><br><br>
+			<button id="btn-generate">Создать паттерн</button>
+		</div>
+		<div class="size-inputs">
+			<label for="square-input" style="font-size: 14pt;">по умолчанию 20</label>
+			<input type="text" id="square-input" placeholder="Размер квадрата"><br><br>
+
+			<label for="circle-input" style="font-size: 14pt;">по умолчанию 10</label>
+			<input type="text" id="circle-input" placeholder="Размер круга"><br><br>
+
+			<label for="x-input" style="font-size: 14pt;">по умолчанию 40</label>
+			<input type="text" id="x-input" placeholder="Длина по X"><br><br>
+
+			<label for="y-input" style="font-size: 14pt;">по умолчанию 40</label>
+			<input type="text" id="y-input" placeholder="Длина по Y"><br><br>
+
+			<label for="bgColor" style="font-size: 14pt;">Фон цвета: по умолчанию #333333</label>
+			<input type="text" id="bgColor" placeholder="Цвет фона"><br><br>
+		</div>
+	</div>
+	<canvas id="canvas" style="display: block;"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
