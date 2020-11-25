@@ -31,6 +31,7 @@ input:focus {outline: none;}
 	text-align: left;
 	display: block;
 }
+.size-inputs label {font-size: 14pt;}
 .size-inputs input {width: 130px;}
 
 #btn-generate {
@@ -111,7 +112,6 @@ input:focus {outline: none;}
 #stroke-btn:checked + label, 
 #fill-stroke-btn:checked + label {background: springgreen;} 
 
-
 .tsrt-zone-block-name {
 	font-size: 14pt;
 	padding: 6px;
@@ -161,6 +161,60 @@ input:focus {outline: none;}
 	border: 2px solid transparent;
 	border-bottom: 2px solid seagreen;
 	border-radius: 0px;
+}
+
+
+@media screen and (max-width: 430px) {
+	.figure-select-block-name {
+		font-size: 12pt;
+		padding: 6px;
+		letter-spacing: 0px;
+	}
+	.tsrt-zone-block-name {
+		font-size: 12pt;
+		padding: 6px;
+		letter-spacing: 0px;
+	}
+	#btn-generate {
+		width: 160px;
+		padding: 4px;
+		font-size: 12pt;
+	}
+	.figure-select-block label {
+		letter-spacing: 0px;
+		font-size: 14pt;
+		padding: 6px;
+	}
+	.fill-stroke-slc-block label {
+		letter-spacing: 0px;
+		font-size: 14pt;
+		padding: 6px;
+	}
+	.tsrt-zone-slc-block label {
+		letter-spacing: 0px;
+		font-size: 14pt;
+		padding: 6px;
+	}
+	#block-setting {
+		top: 0px;
+		left: 0px;
+		width: 355px;
+		padding: 6px;
+		border-radius: 0px;
+		border: 2px solid white;
+	}
+	.setting-page1 {
+		width: 180px;
+		display: block;
+	}
+	.size-inputs {
+		width: 180px;
+		padding: 4px;
+		text-align: left;
+		display: block;
+	}
+	.size-inputs label {font-size: 12pt;}
+	.size-inputs input {width: 90px;}
 }
 
 
