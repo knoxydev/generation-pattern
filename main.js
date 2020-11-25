@@ -13,7 +13,7 @@ let inpY				= document.getElementById("y-input").value = 40;
 let size 				= document.getElementById("square-input").value = 20;
 let arcSize 		= document.getElementById("circle-input").value = 10;
 
-alert("Чтобы открыть настройки нажмите по центру экрана\nЕсли вы на компьютере то можете нажать Sapace или Enter для создания паттерна");
+alert("Чтобы открыть настройки нажмите по центру экрана\nЕсли вы на компьютере то можете нажать Space или Enter для создания паттерна");
 function repeatGeneration() {
 	inpX = document.getElementById("x-input").value;
 	inpY = document.getElementById("y-input").value;
